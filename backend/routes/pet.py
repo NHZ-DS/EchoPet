@@ -4,7 +4,8 @@ pet_bp = Blueprint('pet', __name__)
 
 pets = {
     "cat": {"name": "Cat", "personality": "Chill and playful", "level": 1},
-    "fox": {"name": "Fox", "personality": "Curious and fast learner", "level": 1}
+    "fox": {"name": "Fox", "personality": "Curious and fast learner", "level": 1},
+    "dog": {"name": "Dog", "personality": "Sleepy and slow", "level": 1}
 }
 
 @pet_bp.route('/choose', methods=['POST'])
