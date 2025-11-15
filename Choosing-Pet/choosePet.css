@@ -1,0 +1,116 @@
+body {
+    /* background-image: url("fall-bg.jpg");
+    background-size: cover; */
+    background-color: #f1dca7;
+    overflow-x: hidden;
+}
+
+h3 {
+    font-size: 2.25rem;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    color: #9b9b7a;
+    transform: scale(2);
+    text-shadow: 0.1rem 0.1rem 0 #797d62;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.pets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e8ac65;
+    border: 0.25rem;
+    box-shadow:
+        0 0.25rem black,     
+        0 -0.25rem black,    
+        0.25rem 0 black,     
+        -0.25rem 0 black,
+        0 0.5rem #433d2c4c,
+        0.5rem 0 #433d2c4c;
+    margin: 0 auto;
+    width: 80%;
+    padding: 4rem 0;
+}
+
+.pet {
+    margin-bottom: 1rem;
+    padding: 1.25rem 1.75rem;
+    background-color: #9b9b7a;
+    border: 0.25rem;
+    box-shadow:
+        0 0.25rem black,     
+        0 -0.25rem black,    
+        0.25rem 0 black,     
+        -0.25rem 0 black,
+        0 0.5rem #433d2c4c,
+        0.5rem 0 #433d2c4c;
+    cursor: pointer;
+}
+
+.pet:hover {
+    background-color: #797d62;
+}
+
+.pet:active {
+    transform: translateX(0.25rem);
+    transform: translateY(0.25rem);
+    box-shadow: 0 0.25rem black,     
+        0 -0.25rem black,    
+        0.25rem 0 black,     
+        -0.25rem 0 black;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    color: #f1dca7;
+    border: 0;
+    box-shadow:
+        0 0.25rem black,     
+        0 -0.25rem black,    
+        0.25rem 0 black,     
+        -0.25rem 0 black,
+        0 0.5rem #433d2c4c,
+        0.5rem 0 #433d2c4c;
+    cursor: pointer;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: larger;
+    background-color: #9b9b7a;
+}
+
+.btn:hover {
+    background-color: #797d62;
+}
+
+.btn:active {
+    transform: translateX(0.25rem);
+    transform: translateY(0.25rem);
+    box-shadow: 0 0.25rem black,     
+        0 -0.25rem black,    
+        0.25rem 0 black,     
+        -0.25rem 0 black;
+}
