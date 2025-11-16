@@ -165,18 +165,36 @@ input {
 }
 
 .petlogo {
-    width: 1rem;
-    height: 1rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: #f1dca7e6;
+    margin: 1rem 1rem;
+    box-shadow:
+        0 0.15rem #d08d60cb,     
+        0 -0.15rem #d08d60cb,    
+        0.15rem 0 #d08d60cb,     
+        -0.15rem 0 #d08d60cb;
 }
+
+.txt {
+    padding: 1rem;
+    background-color: #f1dca7c8;
+    color: #d08d60cb;
+    font-size: large;
+    min-width: 9rem;
+    max-height: 3rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.txt-container #bio {
+    min-height: 6rem;
+}
+
 .gridbg .petlogo img{
     width: 8rem;
     height: 8rem;
     margin: 1rem 1rem;
-}
-
-.phone img {
-    width: 2.5rem;
-    height: 2.5rem;
 }
 
 .gridbg .lang img {
@@ -205,25 +223,63 @@ input {
         -0.25rem 0 #d08d60cb,
         0 0.5rem #997b667d,
         0.5rem 0 #997b667d;
-    height: 100%;
     font-size: large;
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    color:#797d62;
+    gap: 0.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
 }
 
 #lessons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-around;
     gap: 2rem;
     justify-content: space-around;
+    background-color: #d6ce93e8;
+    box-shadow:
+        0 0.25rem #797d62,     
+        0 -0.25rem #797d62,    
+        0.25rem 0 #797d62,     
+        -0.25rem 0 #797d62,
+        0 0.5rem #433d2c4c,
+        0.5rem 0 #433d2c4c;
 }
 
-#user{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+.lang {
+    background-color: #9b9b7a;
+    box-shadow:
+        0 0.15rem #797d62,     
+        0 -0.15rem #797d62,    
+        0.15rem 0 #797d62,     
+        -0.15rem 0 #797d62,
+        0 0.25rem #433d2c4c,
+        0.25rem 0 #433d2c4c;
+    font-size: large;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    margin-top: 1rem;
+    color: #f3e6c5;
 }
-   
+
+.lang:hover {
+    background-color: #80805b;
+}
+
+.lang:active {
+    transform: translateY(0.25rem);
+    box-shadow:
+        0 0.15rem #797d62,     
+        0 -0.15rem #797d62,    
+        0.15rem 0 #797d62,     
+        -0.15rem 0 #797d62;
+}
+
+
