@@ -32,6 +32,7 @@ use 'pip install -r requirements.txt' in IDLE terminal
 - Ollama (Local AI)
 - AI model: phi4
 - HTML / CSS / JavaScript
+- Ibis Paint X
 
 ## 👨‍💻 Contributors
 - @chistyar — Backend developer
