@@ -297,3 +297,160 @@ input {
     color: #ffffff;
     font-size: 1.5rem;
 }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-box {
+    background-color: #f1dca7;
+    padding: 2rem;
+    min-width: 20rem;
+    max-width: 30rem;
+    border-radius: 10px;
+    text-align: center;
+
+    box-shadow:
+        0 0.25rem #d08d60cb,
+        0 -0.25rem #d08d60cb,
+        0.25rem 0 #d08d60cb,
+        -0.25rem 0 #d08d60cb,
+        0 0.5rem #997b667d,
+        0.5rem 0 #997b667d;
+
+    animation: scaleIn 0.25s ease;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #433d2c;
+}
+
+.modal-close {
+    margin-top: 1rem;
+    padding: 0.3rem 1rem;
+    background-color: #d6ce93;
+    border: none;
+    cursor: pointer;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.3rem;
+
+    box-shadow:
+        0 0.15rem #797d62,     
+        0 -0.15rem #797d62,    
+        0.15rem 0 #797d62,     
+        -0.15rem 0 #797d62,
+        0 0.25rem #433d2c4c,
+        0.25rem 0 #433d2c4c;
+}
+
+.modal-close:hover {
+    background-color: #9b9b7a;
+}
+
+.modal-close:active {
+    transform: translateY(0.25rem);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+}
+
+.hover-text {
+    opacity: 0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #f3e6c5;
+    transition: 0.3s ease;
+}
+
+.lang:hover .hover-text {
+    opacity: 1;
+}
+
+.lesson-popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+}
+
+.pixel-box {
+    background-color: #ffcb69;
+    width: 22rem;
+    padding: 1.2rem;
+    border: 0.3rem solid #d08d60cb;
+    box-shadow:
+        0 0.25rem #d08d60cb,
+        0 -0.25rem #d08d60cb,
+        0.25rem 0 #d08d60cb,
+        -0.25rem 0 #d08d60cb,
+        0 0.5rem #997b667d,
+        0.5rem 0 #997b667d;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #433d2c;
+}
+
+.pixel-box h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.pixel-box ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pixel-lesson {
+    padding: 0.3rem 0.6rem;
+    background: #f1dca7;
+    border: 0.2rem solid #b58463;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0.25rem 0.25rem #b58463;
+}
+
+.pixel-lesson:hover {
+    background-color: #e8c98a;
+}
+
+.pixel-lesson.locked {
+    opacity: 0.4;
+    pointer-events: none;
+    background: #d6d2aa;
+}
+
+.pixel-close {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.4rem;
+    background: #d6ce93;
+    border: 0.2rem solid #797d62;
+    box-shadow: 0.25rem 0.25rem #797d62;
+    cursor: pointer;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.pixel-close:hover {
+    background-color: #9b9b7a;
+}

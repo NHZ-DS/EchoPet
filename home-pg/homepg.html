@@ -86,15 +86,26 @@
                     </div>
                 </div>
                 <div class="gridbg" id="lessons">
-                    <div class="lang" id="py">
+                    <div class="lang" id="py" data-subject="python">
                         <img src="bg/Snake.jpeg">
                         <h4>Python</h4>
+                        <p class="hover-text">Click to view lessons</p>
                     </div>
-                    <div class="lang" id="html">
+
+                    <div class="lang" id="html" data-subject="html">
                         <img src="bg/Pixilart - Old Computer.jpeg">
                         <h4>HTML</h4>
+                        <p class="hover-text">Click to view lessons</p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="lessonPopup" class="lesson-popup">
+            <div class="pixel-box">
+                <h3 id="popupTitle">Lessons</h3>
+                <ul id="lessonList">
+                </ul>
+                <button class="pixel-close" id="closePopup">Close</button>
             </div>
         </div>
     <script src="homepg.js"></script>
