@@ -20,7 +20,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 img {
@@ -29,50 +29,93 @@ img {
 }
 
 .pets {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #e8ac65;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #ffcb69;
     border: 0.25rem;
     box-shadow:
-        0 0.25rem black,     
-        0 -0.25rem black,    
-        0.25rem 0 black,     
-        -0.25rem 0 black,
-        0 0.5rem #433d2c4c,
-        0.5rem 0 #433d2c4c;
+        0 0.25rem #d08c60,     
+        0 -0.25rem #d08c60,    
+        0.25rem 0 #d08c60,     
+        -0.25rem 0 #d08c60,
+        0 0.5rem #997b667d,
+        0.5rem 0 #997b667d;
     margin: 0 auto;
     width: 80%;
-    padding: 4rem 0;
+    padding: 3rem 0 0.75rem 0;
+    gap: 1.25rem;
+}
+
+.pet-type {    
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.pet-name {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #797d62;
+    font-size: larger;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.pet-name label {
+    margin-right: 0.5rem;
+}
+
+input {
+    background-color: #d6ce93;
+    padding: 0 1rem;
+    color: #60644a;
+    border: 0;
+    box-shadow:
+        0 0.10rem #797d62,     
+        0 -0.10rem #797d62,    
+        0.10rem 0 #797d62,     
+        -0.10rem 0 #797d62,
+        0 0.2rem #433d2c4c,
+        0.2rem 0 #433d2c4c;
+    font-size: large;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .pet {
+    display: flex;
+    align-content: center;
+    justify-content: center;
     margin-bottom: 1rem;
     padding: 1.25rem 1.75rem;
-    background-color: #9b9b7a;
+    background-color: #d6ce93;
     border: 0.25rem;
     box-shadow:
-        0 0.25rem black,     
-        0 -0.25rem black,    
-        0.25rem 0 black,     
-        -0.25rem 0 black,
+        0 0.25rem #797d62,     
+        0 -0.25rem #797d62,    
+        0.25rem 0 #797d62,     
+        -0.25rem 0 #797d62,
         0 0.5rem #433d2c4c,
         0.5rem 0 #433d2c4c;
     cursor: pointer;
 }
 
 .pet:hover {
-    background-color: #797d62;
+    background-color: #9b9b7a;
 }
 
 .pet:active {
     transform: translateX(0.25rem);
-    transform: translateY(0.25rem);
-    box-shadow: 0 0.25rem black,     
-        0 -0.25rem black,    
-        0.25rem 0 black,     
-        -0.25rem 0 black;
+    box-shadow:
+        0 0.25rem #797d62,     
+        0 -0.25rem #797d62,    
+        0.25rem 0 #797d62,     
+        -0.25rem 0 #797d62,
 }
 
 .nav {
@@ -84,13 +127,13 @@ img {
 .btn {
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
-    color: #f1dca7;
+    color: #f8efd7;
     border: 0;
     box-shadow:
-        0 0.25rem black,     
-        0 -0.25rem black,    
-        0.25rem 0 black,     
-        -0.25rem 0 black,
+        0 0.25rem #797d62,     
+        0 -0.25rem #797d62,    
+        0.25rem 0 #797d62,     
+        -0.25rem 0 #797d62,
         0 0.5rem #433d2c4c,
         0.5rem 0 #433d2c4c;
     cursor: pointer;
@@ -99,18 +142,59 @@ img {
     font-weight: 700;
     font-style: normal;
     font-size: larger;
-    background-color: #9b9b7a;
+    background-color: #d6ce93;
 }
 
 .btn:hover {
-    background-color: #797d62;
+    background-color: #9b9b7a;
 }
 
 .btn:active {
     transform: translateX(0.25rem);
-    transform: translateY(0.25rem);
-    box-shadow: 0 0.25rem black,     
-        0 -0.25rem black,    
-        0.25rem 0 black,     
-        -0.25rem 0 black;
+    box-shadow:
+        0 0.25rem #797d62,     
+        0 -0.25rem #797d62,    
+        0.25rem 0 #797d62,     
+        -0.25rem 0 #797d62,
+}
+
+.pet.selected {
+    transform: translateX(0.25rem);
+    transition: all 0.30ms ease;
+    background-color: #9b9b7a;
+    box-shadow:
+        0 0.25rem #797d62,     
+        0 -0.25rem #797d62,    
+        0.25rem 0 #797d62,     
+        -0.25rem 0 #797d62,
+        0 0.5rem #433d2c4c,
+        0.5rem 0 #433d2c4c;
+}
+
+#save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 4rem;
+    max-height: 3rem;
+    padding: auto auto;
+}
+
+.save-btn {
+    display: flex;
+    justify-content: right;
+    margin-right: 0.75rem;
+}
+
+#save.selected{
+    transform: translateX(0.25rem);
+    transition: all 0.30ms ease;
+    background-color: #9b9b7a;
+    box-shadow:
+        0 0.25rem #797d62,     
+        0 -0.25rem #797d62,    
+        0.25rem 0 #797d62,     
+        -0.25rem 0 #797d62,
+        0 0.5rem #433d2c4c,
+        0.5rem 0 #433d2c4c;
 }
