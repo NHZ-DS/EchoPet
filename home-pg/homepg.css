@@ -282,4 +282,18 @@ input {
         -0.15rem 0 #797d62;
 }
 
+.user-money {
+    display: flex;
+    justify-content: left;
+}
 
+.user-money img {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+}
+
+.user-money h6{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
