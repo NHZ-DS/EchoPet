@@ -21,7 +21,7 @@ use 'pip install -r requirements.txt' in IDLE terminal
 3. open http://localhost:11434/ to check if ollama is running
 4. Pull a model: open your cmd and run 'ollama pull phi4'
 
-## Run the programm
+## Run the program
 1. Run app.py
 2. Open frontend/Start-page/start.html in browser
 
@@ -43,7 +43,7 @@ use 'pip install -r requirements.txt' in IDLE terminal
 
 ## ✨ Idea of 'play and code'
 We live in an era of short videos and booming AI tools.
-You no longer need to watch 100 long theory lessons or solve 1,000 boring exercises just to start coding.
+You no longer need to watch over 100 lengthy theoretical lessons or solve over 1,000 boring exercises just to start coding.
 Today, you can open ChatGPT, write a few prompts, and boom — you get a 200-line piece of code that builds a fully working website.
 
 But here’s the real question:
