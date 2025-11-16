@@ -5,6 +5,14 @@
 
 ## EchoPet is a gamified web app where students learn coding languages through quizzes and mini-projects while raising a virtual pet that evolves with their progress
 
+# 📌 Project Status
+
+⚠️ EchoPet is in active development.
+This is a prototype, not a finished game.
+
+Some systems work (AI courses, quiz backend, frontend UI),
+but the full gameplay loop is still being implemented.
+
 # 🚀 Installation
 ## First step
 Clone the main branch of repository
@@ -64,6 +72,67 @@ No pressure.
 No overwhelming textbooks.
 Just you, your pets, and a playful introduction to the foundations of coding.
 
+
+# 🎯 Roadmap – Next Development Goals
+## 🟣 Frontend ↔ Backend Integration
+
+Display AI-generated lessons inside UI
+
+Connect quiz system to pet XP/coins
+
+Sync player progress
+
+## 🟢 Pet Evolution System
+
+Levels, moods, interactions
+
+Skill growth from learning
+
+## 🔵 Extended Quiz System
+
+Python / HTML / JavaScript quizzes
+
+Difficulty levels
+
+Daily challenges
+
+## 🟠 Improved Course Generator
+
+Multi-lesson curriculum
+
+Visual UI for lessons
+
+Mini-tasks inside gameplay
+
+## 🟡 Save & Progress
+
+Store XP, levels, coins
+
+Local or server save system
+
+## 🔴 UI/UX Enhancements
+
+Better animations
+
+More pages (shop, playground, pet home)
+
+
+## ⚠️ Current Limitations
+
+Not all UI pages are connected
+
+Lessons/quizzes still display in dev format
+
+Pet logic is a prototype
+
+Gameplay cycle incomplete
+
+Backend and frontend partially integrated
+
+Despite this, the demo works well for presentation.
+
+
+## Credentials ❗
 This project’s visual concepts, including the pet designs, were inspired by references gathered from Pinterest
 
    
