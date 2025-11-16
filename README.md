@@ -63,6 +63,7 @@ No pressure.
 No overwhelming textbooks.
 Just you, your pets, and a playful introduction to the foundations of coding.
 
+This project’s visual concepts, including the pet designs, were inspired by references gathered from Pinterest
 
    
 
