@@ -185,3 +185,39 @@ input {
     justify-content: right;
     margin-right: 0.75rem;
 }
+
+a {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    color: #f8efd7;
+    border: 0;
+    box-shadow:
+        0 0.25rem #797d62,     
+        0 -0.25rem #797d62,    
+        0.25rem 0 #797d62,     
+        -0.25rem 0 #797d62,
+        0 0.5rem #433d2c4c,
+        0.5rem 0 #433d2c4c;
+    cursor: pointer;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: larger;
+    background-color: #d6ce93;
+    text-decoration: none;
+    display: block;
+}
+
+a:hover {
+    background-color: #9b9b7a;
+}
+
+a:active {
+    transform: translateX(0.25rem);
+    box-shadow:
+        0 0.25rem #797d62,     
+        0 -0.25rem #797d62,    
+        0.25rem 0 #797d62,     
+        -0.25rem 0 #797d62,
+}
