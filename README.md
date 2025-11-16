@@ -36,6 +36,7 @@ use 'pip install -r requirements.txt' in IDLE terminal
 ## 👨‍💻 Contributors
 - @chistyar — Backend developer
 - @NHZ-DS -  Backend developer
+- @fae-ctrl - Designer
 
 
 
