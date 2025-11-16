@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profile.css">
+    <title>EchoPet: Choose language</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Profile Setup</h3>
+        <div class="profile">
+            <div class="user-profile">
+                <div class="pet-logo">
+                    <img src="" id="pet-img">
+                </div>
+                <div class="inputs">
+                    <div class="input-name">
+                        <input type="text" name="user-name" id="user-name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-bio">
+                        <textarea placeholder="Enter your bio"></textarea>
+                    </div>
+                </div>
+            </div>
+            <p>What do you wish to learn?</p>
+            <div class="langs">
+                <div class="lang" id="python">
+                    <img src="lang-imgs/Python-logo-notext.svg.png" alt="python logo">
+                </div>
+                <div class="lang" id="html">
+                    <img src="lang-imgs/HTML5_logo_and_wordmark.svg.png" alt="html5 logo">
+                </div>
+            </div>
+            <div class="save-btn">
+                <button class="btn" id="save">Save</button>
+            </div>
+        </div>
+        <div class="nav">
+            <button class="btn" id="back2">Back</button>
+            <button class="btn" id="next2">Move to Home Page</button>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

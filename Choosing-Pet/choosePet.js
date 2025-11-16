@@ -2,9 +2,9 @@ const backBtn = document.querySelector("#back");
 const nextBtn = document.querySelector("#next");
 const saveBtn = document.querySelector("#save");
 
-const foxBtn = document.querySelector("#baby-fox");
-const puppyBtn = document.querySelector("#puppy");
-const catBtn = document.querySelector("#kitty");
+// const foxBtn = document.querySelector("#baby-fox");
+// const puppyBtn = document.querySelector("#puppy");
+// const catBtn = document.querySelector("#kitty");
 const petChoices = document.querySelectorAll(".pet");
 
 let nameInput = document.querySelector("input");
@@ -17,9 +17,10 @@ class petInfo{
     }
 }
 class userInfo extends petInfo{
-    constructor(petName, type, mood, userName, xp, coins, language){
+    constructor(petName, type, mood, userName, bio, xp, coins, language){
         super(petName, type, mood);
         this.userName = userName;
+        this.bio = bio;
         this.xp = xp;
         this.coins = coins;
         this.language = language;
@@ -66,5 +67,4 @@ saveBtn.addEventListener("click", ()=> {
     console.log(pet1.petName);
     console.log(pet1.type);
     console.log(pet1.mood);
-    saveBtn.classList.toggle("selected");
 });
